@@ -1,0 +1,199 @@
+/* common selector start */
+.text-justify{
+    text-align: justify;
+}
+/* common selector end */
+/* header section start */
+header{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    /* height: 676px; */
+}
+/* navbar start */
+header .nav-link {
+    color: #fff;
+    text-align: right;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header .nav-link:focus, 
+header .nav-link:hover {
+    color: #87d37c;
+}
+header .navbar-nav .nav-link.active, 
+header .navbar-nav .show > .nav-link {
+    color: #87d37c;
+}
+/* navbar end */
+/* carousel start */
+header .carousel-item h1{
+    /* font-size: 100px; */
+    font-weight: 600;
+    border: 2px solid #fff;
+    display: inline-block;
+    /* width: fit-content;
+    margin: 0px auto; */
+    padding: 20px;
+}
+header .carousel-item h1 span{
+    color: #87d37c;
+}
+header .carousel-item h2{
+    /* font-size: 40px; */
+    font-weight: 600;
+}
+header .carousel-item h3{
+    /* font-size: 36px; */
+    font-weight: 600;
+}
+header .carousel-indicators [data-bs-target]{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-top: 0px solid transparent;
+    border-bottom:  0px solid transparent;;
+    opacity: 1;
+}
+header .carousel-indicators .active {
+    background: #87d37c;
+}
+/* carousel end */
+@media (min-width: 0px) and (max-width: 991px){
+    header nav.navbar{
+        height: 103px;
+    }
+    header .navbar-nav{
+        max-width: 200px;
+    }
+    header .nav-item {
+        background: rgba(0,0,0,.5);
+        padding-right: 10px;
+        border-bottom: 2px solid #fff;
+    }
+}
+/* header section end */
+/* about us section start */
+.about-us .content-block i,
+.about-us .content-block h2{
+    transition: .5s all linear;
+}
+.about-us .content-block:hover i,
+.about-us .content-block:hover h2{
+    color: #87d37c;
+    cursor: pointer;
+}
+/* about us section end */
+
+/* services section start */
+.services{
+    background: #e1e1e1;
+}
+.services .content-block{
+    position: relative;
+    overflow: hidden;
+}
+.services .content-overlay{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    transition: 1s all linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .content-block:hover .content-overlay{
+    top: 0%;
+}
+.services .content-overlay a{
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: .5s all linear;
+    margin: 0px 5px;
+}
+.services .content-overlay a i{
+    padding-top: 10px;
+}
+.services .content-overlay a:hover{
+    background: #87d37c;
+}
+/* services section end */
+
+/* portfolio section start */
+.portfolio .nav-pills .nav-link {
+    background: #000;
+    border-radius: 0px;
+    margin: 0px 5px;
+    color: #fff;
+    transition: .5s all linear;
+}
+.portfolio .nav-pills .nav-link:hover{
+    color: #000;
+    background: #87d37c;
+}
+.portfolio .nav-pills .nav-link.active{
+    color: #000;
+    background: #87d37c;
+}
+.portfolio .content-block{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .content-overlay{
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    transition: .5s all linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .content-block:hover .content-overlay{
+    top: 0%;
+}
+.portfolio .content-overlay a{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    transition: .5s all linear;
+}
+.portfolio .content-overlay a:hover{
+    background: #87d37c;
+}
+/* portfolio section end */
+
+/* counter section start */
+.counter{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(../img/counter-bg.jpg);
+}
+.counter .content-block{
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: rgba(0,0,0,.7);
+}
+.counter .content-block h2{
+    font-size: 50px;
+    font-weight: 600;
+}
+.counter .content-block p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+}
+/* counter section end */
